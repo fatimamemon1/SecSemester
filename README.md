@@ -8,7 +8,9 @@ Purpose: The primary purpose of a Student Management System (SMS) database is to
 ##TO run: Download java SQL connector
 
 ##MySQL requirements:
+
 create database finalPro;
+
 create table Students(ID int Primary Key, NAME varchar(20),DEPARTMENT varchar(20));
 
 create table StudentFee(ID int,feePaid int, feeRem int,FOREIGN KEY (ID) REFERENCES Students(ID));
